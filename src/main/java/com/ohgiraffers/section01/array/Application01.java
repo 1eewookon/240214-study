@@ -70,6 +70,69 @@ public class Application01 {
         /* 필기. 위의 선언과 할당을 동시에 할 수 있다. */
         int[] iarr2 = new int[5];
 
+
+        int age1 = 1;
+        int age2 = 2;
+        int age3 = 3;
+        int age4 = 4;
+        int age5 = 5;
+
+        int[] age = new int[5];
+//        age[0] = 10;
+//        age[1] = 20;
+//        age[2] = 30;
+//        age[3] = 40;
+//        age[4] = 50;
+
+        System.out.println("age[0] : " + age[0]);
+        System.out.println("age[1] : " + age[1]);
+        System.out.println("age[2] : " + age[2]);
+        System.out.println("age[3] : " + age[3]);
+        System.out.println("age[4] : " + age[4]);
+
+        /* 필기.
+        *   값의 형태 별 기본값
+        *   정수 : 0
+        *   실수 : 0.0
+        *   논리 : false
+        *   문자 : \u0000
+        *   참조 : null
+        *  */
+
+        /* 필기.
+        *   자바에서 지정한 기본값 외의 값으로 초기화 하고 싶으면 블럭({}) 을 이용한다.
+        *   블럭({}) 을 사용하는 경우에는 new 를 사용하지 않아도 되며, 값의
+        *   갯수 만큼 자동으로 크기가 설정된다.
+        *  */
+
+        int[] iarr3 = new int[5];
+        iarr3[0] = 10;
+        iarr3[1] = 20;
+        iarr3[2] = 30;
+        iarr3[3] = 40;
+        iarr3[4] = 50;
+
+        int[] iarr4 = {10, 20, 30, 40, 50};
+        int[] iarr5 = new int[] {10, 20, 30, 40, 50, 60};
+
+        System.out.println("iarr4 의 길이 : " + iarr4.length);
+        System.out.println("iarr5 의 길이 : " + iarr5.length);
+
+        for(int i = 0; i < iarr5.length; i++) {
+
+            System.out.println("iarr5[" + i + "]" + iarr5[i]);
+
+        }
+
+        // 문자열 배열을 만들어 보자.
+        String[] sarr = {"apple", "banana", "grape", "orange"};
+
+        for(int i = 0; i < sarr.length; i++) {
+
+            System.out.println("sarr[" + i + "]" + " = " + sarr[i]);
+
+        }
+
     }
 
 }
