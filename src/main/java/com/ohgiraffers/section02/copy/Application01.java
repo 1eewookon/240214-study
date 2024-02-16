@@ -21,6 +21,8 @@ public class Application01 {
         // 원본 배열 생성
         int[] orginArr = {1,2,3,4,5,10,7};
 
+        // originArr 에 저장된 배열의 주소를 copyArr 에도 저장해보자
+
     }
 
 }
