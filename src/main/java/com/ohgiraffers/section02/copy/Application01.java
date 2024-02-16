@@ -19,9 +19,41 @@ public class Application01 {
         *  */
 
         // 원본 배열 생성
-        int[] orginArr = {1,2,3,4,5,10,7};
+        int[] originArr = {1,2,3,4,5,10,7};
 
         // originArr 에 저장된 배열의 주소를 copyArr 에도 저장해보자
+        int[] copyArr = originArr;      // 얕은 복사
+
+        System.out.println(originArr.hashCode());   // hashCode() 는 그냥 우리의 주민번호 처럼 생각하자
+        System.out.println(copyArr.hashCode());
+
+        for(int i = 0; i < originArr.length; i++) {
+
+            System.out.println(originArr[i]);
+        }
+
+        System.out.println();
+
+        for(int i = 0; i < copyArr.length; i++) {
+
+            System.out.println(copyArr[i]);
+        }
+
+        copyArr[0] = 99;
+
+        for(int i = 0; i < originArr.length; i++) {
+
+            System.out.println(originArr[i]);
+
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < copyArr.length; i++) {
+
+            System.out.println(copyArr[i]);
+
+        }
 
     }
 
