@@ -34,10 +34,25 @@ public class Application01 {
 
         System.out.println();
 
-
         for(int i = 0; i < copyArr.length; i++) {
 
             System.out.println(copyArr[i]);
+        }
+
+        copyArr[0] = 99;
+
+        for(int i = 0; i < originArr.length; i++) {
+
+            System.out.println(originArr[i]);
+
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < copyArr.length; i++) {
+
+            System.out.println(copyArr[i]);
+
         }
 
     }
