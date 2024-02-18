@@ -19,10 +19,35 @@ public class Application04 {
         }
 
         for(int i = 0; i < arr1.length; i++) {
-            System.out.println(arr1[i]);
+            System.out.print(arr1[i]);
         }
 
         System.out.println();
+
+        /* 필기.
+        *   향상된 for문
+        *   배열 인덱스에 하나씩 차례로 접근해서 담긴 값을 임시로 사용할 변수에 담고 반복문을 실행한다.
+        *  */
+
+        for(int i : arr2) {
+            i += 10;
+        }
+
+        for(int i = 0; i < arr2.length; i++) {
+            // 값을 더한 것 같은데 증가되고 있지 않다. 인덱스에 접근해서 값을 변경한게 아니고 꺼낸 값을 복사해서 쓴 것.
+            System.out.print(arr2[i] + " ");
+        }
+
+        System.out.println();
+
+        /* 필기.
+        *   주의 : 향상된 for문은 배열에 인덱스에 차례로 접근 할 때는 편하게 사용할 수 있지만, 값을 변경할 수 없다.
+        *        대신, 변경하는 것이 아니고 사용하는 것이 목적이라면 조금 더 편하게 사용할 수 있다.
+        *  */
+
+        for(int i : arr2) {
+            System.out.print(i + " ");
+        }
 
     }
 
