@@ -27,6 +27,7 @@ public class Application04 {
         double sum = 0.0;
         double avg = 0.0;
 
+        // 합계는 모든 인덱스의 값을 sum 변수에 누적해서 담아준다.
         for(int i = 0; i < scores.length; i++) {
             sum += scores[i];
         }
